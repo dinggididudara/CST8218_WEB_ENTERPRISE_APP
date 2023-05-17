@@ -1,4 +1,4 @@
-package cst8218.lee00665.mavenproject2;
+package cst8218.lee00665.mavenproject2.entity;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;

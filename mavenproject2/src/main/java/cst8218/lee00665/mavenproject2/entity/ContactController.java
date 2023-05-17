@@ -1,4 +1,4 @@
-package cst8218.lee00665.mavenproject2;
+package cst8218.lee00665.mavenproject2.entity;
 
 import cst8218.lee00665.mavenproject2.util.JsfUtil;
 import cst8218.lee00665.mavenproject2.util.PaginationHelper;
@@ -23,7 +23,7 @@ public class ContactController implements Serializable {
     private Contact current;
     private DataModel items = null;
     @EJB
-    private cst8218.lee00665.mavenproject2.ContactFacade ejbFacade;
+    private cst8218.lee00665.mavenproject2.entity.ContactFacade ejbFacade;
     private PaginationHelper pagination;
     private int selectedItemIndex;
 

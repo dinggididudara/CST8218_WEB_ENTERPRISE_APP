@@ -2,13 +2,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package cst8218.lee00665.mavenproject2;
+package cst8218.lee00665.mavenproject2.entity;
 
 import java.io.Serializable;
 import java.util.Date;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
@@ -35,8 +37,10 @@ import javax.validation.constraints.Size;
     @NamedQuery(name = "Contact.findByMobilephone", query = "SELECT c FROM Contact c WHERE c.mobilephone = :mobilephone")})
 public class Contact implements Serializable {
 
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = -1L;
+//   private static final long serialVersionUID = -825634229676522580L;
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Basic(optional = false)
     @NotNull
     @Column(name = "ID")

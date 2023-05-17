@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package cst8218.lee00665.mavenproject2;
+package cst8218.lee00665.mavenproject2.entity;
 
 import java.util.List;
 import javax.persistence.EntityManager;
