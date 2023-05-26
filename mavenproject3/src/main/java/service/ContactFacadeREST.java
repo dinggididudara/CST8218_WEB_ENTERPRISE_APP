@@ -39,14 +39,22 @@ public class ContactFacadeREST extends AbstractFacade<Contact> {
         super(Contact.class);
     }
 
+    /**
+     *
+     * @param entity
+     * @param uriInfo
+     * @return
+     * @throws URISyntaxException
+     */
     @POST
     @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-    public Response createPost(Contact entity, @Context UriInfo uriInfo) throws URISyntaxException {
+ public Response createPost(Contact entity, @Context UriInfo uriInfo) throws URISyntaxException {
         super.create(entity);
         URI location = new URI(uriInfo.getRequestUri().getPath() + "/" + entity.getId());
         
         return Response.status(Response.Status.CREATED).location(location).entity(entity).build();
     }
+
 
     @PUT
     @Path("{id}")

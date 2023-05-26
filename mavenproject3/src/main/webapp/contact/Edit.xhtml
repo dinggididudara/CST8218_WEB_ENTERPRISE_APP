@@ -15,9 +15,7 @@
             </h:panelGroup>
             <h:form>
                 <h:panelGrid columns="2">
-                    <h:outputLabel value="#{bundle.EditContactLabel_id}" for="id" />
-                    <h:inputText id="id" value="#{contactController.selected.id}" title="#{bundle.EditContactTitle_id}" required="true" requiredMessage="#{bundle.EditContactRequiredMessage_id}"/>
-                    <h:outputLabel value="#{bundle.EditContactLabel_birthday}" for="birthday" />
+                   <h:outputLabel value="#{bundle.EditContactLabel_birthday}" for="birthday" />
                     <h:inputText id="birthday" value="#{contactController.selected.birthday}" title="#{bundle.EditContactTitle_birthday}" >
                         <f:convertDateTime pattern="MM/dd/yyyy" />
                     </h:inputText>
